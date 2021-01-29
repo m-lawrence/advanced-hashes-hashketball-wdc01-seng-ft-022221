@@ -235,6 +235,10 @@ def winning_team
   game_hash.map do |location, team_stats|
     team_stats[:players].map do |index|
       team_points.push(index[:points])
+      if team_points.reduce > most_points
+        most_points = team_points.reduce
+    end
     end
   end
+  most_points
 end
