@@ -207,7 +207,10 @@ def big_shoe_rebounds
   rebound_answer = nil
   game_hash.map do |location, team_stats|
     team_stats[:players].map do |index|
+      if shoe_check <= index[:shoe]
+        shoe_check = index[:shoe]
     binding.pry
+  end
   end
   end
 end
