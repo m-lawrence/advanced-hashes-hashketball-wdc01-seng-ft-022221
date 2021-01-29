@@ -215,3 +215,16 @@ def big_shoe_rebounds
   end
   rebound_answer
 end
+
+def most_points_scored
+  highest_points = 0 
+  game_hash.map do |location, team_stats|
+    team_stats[:players].map do |index|
+      if highest_points <= index[:points]
+        highest_points = index[:points]
+      end
+    end 
+  end
+  highest_points
+  binding.pry
+end
