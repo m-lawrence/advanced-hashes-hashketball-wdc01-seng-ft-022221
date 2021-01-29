@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -126,4 +127,16 @@ def game_hash
   }
 end
 
-# Write code here
+def num_points_scored(name)
+  game_points = nil
+  game_hash.map do |location, team_stats|
+   team_stats[:players].map do |index|
+     index.map do |stat_name, value|
+       if name == index[:player_name]
+         game_points = index[:points]
+     end
+     end
+    end
+  end
+  game_points
+end
