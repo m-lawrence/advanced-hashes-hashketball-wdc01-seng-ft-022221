@@ -177,7 +177,7 @@ def player_numbers(name)
   jersey_numbers = []
   game_hash.map do |location, team_stats|
     if name == team_stats[:team_name]
-      binding.pry
+      
     end 
   end
 end
