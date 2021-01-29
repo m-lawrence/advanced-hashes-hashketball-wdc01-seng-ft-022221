@@ -180,6 +180,7 @@ def player_numbers(name)
       team_stats.map do |team_data, value|
         team_stats[:players].map do |index|
           jersey_numbers.push(index[:number])
+          jersey_numbers = jersey_numbers.uniq
       end
       end
     end 
