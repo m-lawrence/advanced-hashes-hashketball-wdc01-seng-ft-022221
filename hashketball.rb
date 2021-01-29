@@ -179,6 +179,7 @@ def player_numbers(name)
     if name == team_stats[:team_name]
       team_stats.map do |team_data, value|
         team_stats[:players]
+        binding.pry
       end
     end 
   end
