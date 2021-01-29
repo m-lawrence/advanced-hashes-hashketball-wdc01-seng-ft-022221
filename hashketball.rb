@@ -230,7 +230,10 @@ end
 
 def winning_team
   winners = ""
+  most_points = 0
   game_hash.map do |location, team_stats|
-    binding.pry
+    team_stats[:players].map do |stat_name, value|
+      stat_name
+    end
   end
 end
