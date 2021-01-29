@@ -159,7 +159,7 @@ def team_colors(name)
   color_answer = []
   game_hash.map do |location, team_stats|
     if name == team_stats[:team_name]
-      color_answer.push(team_stats[:colors])
+      color_answer = team_stats[:colors]
   end
   end
   color_answer
