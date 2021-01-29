@@ -159,4 +159,5 @@ def team_colors(name)
   color_answer = []
   game_hash.map do |location, team_stats|
     binding.pry
+  end
 end
