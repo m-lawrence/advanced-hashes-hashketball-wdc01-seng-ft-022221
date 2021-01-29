@@ -172,3 +172,8 @@ def team_names
   end
   teams
 end
+
+def player_numbers(name)
+  jersey_numbers = []
+  
+end
