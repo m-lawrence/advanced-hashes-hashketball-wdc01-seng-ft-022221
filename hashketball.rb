@@ -178,8 +178,10 @@ def player_numbers(name)
   game_hash.map do |location, team_stats|
     if name == team_stats[:team_name]
       team_stats.map do |team_data, value|
-        team_stats[:players]
+        team_stats[:players].map do |index|
+          
         binding.pry
+      end
       end
     end 
   end
