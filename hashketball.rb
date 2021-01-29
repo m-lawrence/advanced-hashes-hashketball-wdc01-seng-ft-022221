@@ -227,3 +227,9 @@ def most_points_scored
   end
   highest_points
 end
+
+def winning_team
+  winners = ""
+  game_hash.map do |location, team_stats|
+  end
+end
