@@ -203,5 +203,9 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  
+  shoe_check = 0 
+  rebound_answer = nil
+  game_hash.map do |location, team_stats|
+    binding.pry
+  end
 end
