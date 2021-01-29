@@ -228,18 +228,3 @@ def most_points_scored
   highest_points
 end
 
-def winning_team
-  team_points = []
-  winners = ""
-  most_points = 0
-  game_hash.map do |location, team_stats|
-    team_stats[:players].map do |index|
-      team_points.push(index[:points])
-      team_points = team_points.reduce(:+)
-      if most_points <= team_points
-        most_points = team_points
-    end
-    end
-  end
-  most_points
-end
