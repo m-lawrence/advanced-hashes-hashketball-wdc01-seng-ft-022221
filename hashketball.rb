@@ -229,11 +229,12 @@ def most_points_scored
 end
 
 def winning_team
+  team_points = []
   winners = ""
   most_points = 0
   game_hash.map do |location, team_stats|
-    team_stats[:players].map do |stat_name, value|
-      stat_name
+    team_stats[:players].map do |index|
+      team_points.push(index[:points])
     end
   end
 end
