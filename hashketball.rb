@@ -164,3 +164,8 @@ def team_colors(name)
   end
   color_answer
 end
+
+def team_names
+  teams = []
+  
+end
