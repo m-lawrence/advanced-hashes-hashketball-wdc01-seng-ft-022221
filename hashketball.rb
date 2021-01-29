@@ -167,5 +167,6 @@ end
 
 def team_names
   teams = []
-  
+  game_hash.map do |location, team_stats|
+    binding.pry
 end
