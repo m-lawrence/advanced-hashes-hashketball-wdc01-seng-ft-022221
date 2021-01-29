@@ -194,9 +194,10 @@ def player_stats(name)
    team_stats[:players].map do |index|
      index.map do |stat_name, value|
        if name == index[:player_name]
-         binding.pry
+         name_stats = index
        end 
      end 
    end 
  end
+ name_stats
 end
