@@ -179,10 +179,10 @@ def player_numbers(name)
     if name == team_stats[:team_name]
       team_stats.map do |team_data, value|
         team_stats[:players].map do |index|
-          jersey_numbers.push()
-        binding.pry
+          jersey_numbers.push(index[:number])
       end
       end
     end 
   end
+  jersey_numbers
 end
