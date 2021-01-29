@@ -190,5 +190,13 @@ end
 
 def player_stats(name)
   name_stats = {}
-  
+  game_hash.map do |location, team_stats|
+   team_stats[:players].map do |index|
+     index.map do |stat_name, value|
+       if name == index[:player_name]
+         binding.pry
+       end 
+     end 
+   end 
+ end
 end
