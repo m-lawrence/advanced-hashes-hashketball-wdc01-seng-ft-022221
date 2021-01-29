@@ -143,5 +143,11 @@ end
 
 def shoe_size(name)
   size_answer = nil 
-  
+  game_hash.map do |location, team_stats|
+   team_stats[:players].map do |index|
+     index.map do |stat_name, value| 
+       binding.pry
+   end
+ end 
+ end 
 end
