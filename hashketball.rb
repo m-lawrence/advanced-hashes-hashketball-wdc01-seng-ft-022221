@@ -210,6 +210,7 @@ def big_shoe_rebounds
     team_stats[:players].map do |index|
       if shoe_check <= index[:shoe]
         shoe_check = index[:shoe]
+        rebound_answer = index[:rebounds]
   end
   end
   end
