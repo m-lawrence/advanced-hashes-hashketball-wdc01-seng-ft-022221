@@ -168,6 +168,7 @@ end
 def team_names
   teams = []
   game_hash.map do |location, team_stats|
-    teams.push()
+    teams.push(team_stats[:team_name])
   end
+  teams
 end
